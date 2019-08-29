@@ -29,6 +29,12 @@ def hit_me():
 b = tk.Button(my_window, text='OK', font=('Arial', 12), width=10, height=1, command=hit_me)
 b.pack()
 
+def win_exit():
+    my_window.quit()
+
+b2 = tk.Button(my_window, text='Exit', font=('Arial', 12), width=10, height=1, command=win_exit)
+b2.pack()
+
 e1 = tk.Entry(my_window, show="*****", font=('Arial', 14))   # 显示成密文形式
 e2 = tk.Entry(my_window, show=None, font=('Arial', 14))  # 显示成明文形式
 e1.pack()
